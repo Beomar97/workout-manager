@@ -1,4 +1,4 @@
-# FullstackApp
+# Workout Manager Full Stack App
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -6,7 +6,18 @@
 
 ## Development server
 
-Run `nx serve frontend` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+### Angular Frontend
+Run `nx serve angular-frontend` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+### NestJS Backend
+Run `nx serve nestjs-backend` for a dev server. Navigate to http://localhost:3333/. The app will automatically reload if you change any of the source files.
+
+### Postgres Database
+Run `docker-compose up` to start the database. The database will be available at http://localhost:5432/. The default username and password are `dbuser` and `dbpassword` respectively.
+
+#### Prisma
+Run `npx prisma migrate dev --name init` to initialize the database with some dummy data. Run `npx prisma studio` to open Prisma Studio.
+
 
 ## Understand this workspace
 
